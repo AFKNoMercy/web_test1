@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phát Nhạc</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #playButton {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #playButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <button id="playButton">Phát nhạc</button>
-    <audio id="audioPlayer" src="YOUR_MUSIC_LINK_HERE" type="audio/mp3"></audio>
+    <audio id="audioPlayer" src="https://www.youtube.com/watch?v=xvFZjo5PgG0" type="audio/mp3"></audio>
 
     <script>
         const playButton = document.getElementById('playButton');
