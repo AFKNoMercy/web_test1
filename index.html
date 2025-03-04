@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phát Nhạc</title>
+</head>
+<body>
+    <button id="playButton">Phát nhạc</button>
+    <audio id="audioPlayer" src="YOUR_MUSIC_LINK_HERE" type="audio/mp3"></audio>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        playButton.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playButton.textContent = 'Dừng nhạc';
+            } else {
+                audioPlayer.pause();
+                playButton.textContent = 'Phát nhạc';
+            }
+        });
+    </script>
+</body>
+</html>
